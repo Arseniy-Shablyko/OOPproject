@@ -1,7 +1,7 @@
-#include "Parking.h"
+#include "Initializer.h"
 
 int main() {
-	Parking parking1;
+	/*Parking parking1;
 	Parking parking2(30);
 	Parking parking3(30, 5);
 	Parking parking4(30, 5, 2);
@@ -17,7 +17,20 @@ int main() {
 	cout << parking5.toString() << endl;
 	cout << parking6.toString() << endl;
 	cout << parking7.toString() << endl;
-	cout << parking8.toString() << endl;
+	cout << parking8.toString() << endl;*/
 
+	Parking* parking = nullptr;
+	Initializer initializer;
+
+	int count;
+	cout << "Input number of parkings: ";
+	cin >> count;
+
+	initializer.init(parking,count);
+
+	for (int i = 0; i < count; i++) {
+		cout << parking[i].toString() << endl;;
+
+	}
 	return 0;
 }

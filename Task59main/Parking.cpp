@@ -32,7 +32,7 @@ Parking::Parking(int NumberOfPlace, int ParkingFee) {
 Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber) {
 	number_of_place = NumberOfPlace < 1 ? 1 : NumberOfPlace;
 	parking_fee = ParkingFee < 0 ? 0 : ParkingFee;
-	street_number = StreetNumber;
+	street_number = StreetNumber < 0 ? 0 : StreetNumber;;
 	street_name = "no name";
 	security_systems = false;
 	availability_of_lighting = true;
@@ -42,7 +42,7 @@ Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber) {
 Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string StreetName) {
 	number_of_place = NumberOfPlace < 1 ? 1 : NumberOfPlace;
 	parking_fee = ParkingFee < 0 ? 0 : ParkingFee;
-	street_number = StreetNumber < 1 ? 1 : StreetNumber;
+	street_number = StreetNumber < 0 ? 0 : StreetNumber;
 	street_name = StreetName;
 	security_systems = false;
 	availability_of_lighting = true;
@@ -52,7 +52,7 @@ Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string Str
 Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string StreetName, bool SecuritySystem) {
 	number_of_place = NumberOfPlace < 1 ? 1 : NumberOfPlace;
 	parking_fee = ParkingFee < 0 ? 0 : ParkingFee;
-	street_number = StreetNumber < 1 ? 1 : StreetNumber;
+	street_number = StreetNumber < 0 ? 0 : StreetNumber;
 	street_name = StreetName;
 	security_systems = SecuritySystem;
 	availability_of_lighting = true;
@@ -62,7 +62,7 @@ Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string Str
 Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string StreetName, bool SecuritySystem, bool AvailabilityOfLight) {
 	number_of_place = NumberOfPlace < 1 ? 1 : NumberOfPlace;
 	parking_fee = ParkingFee < 0 ? 0 : ParkingFee;
-	street_number = StreetNumber < 1 ? 1 : StreetNumber;
+	street_number = StreetNumber < 0 ? 0 : StreetNumber;
 	street_name = StreetName;
 	security_systems = SecuritySystem;
 	availability_of_lighting = AvailabilityOfLight;
@@ -72,7 +72,7 @@ Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string Str
 Parking::Parking(int NumberOfPlace, int ParkingFee, int StreetNumber, string StreetName, bool SecuritySystem, bool AvailabilityOfLight, bool PrecenceOfARoof) {
 	number_of_place = NumberOfPlace < 1 ? 1 : NumberOfPlace;
 	parking_fee = ParkingFee < 0 ? 0 : ParkingFee;
-	street_number = StreetNumber < 1 ? 1 : StreetNumber;
+	street_number = StreetNumber < 0 ? 0 : StreetNumber;
 	street_name = StreetName;
 	security_systems = SecuritySystem;
 	availability_of_lighting = AvailabilityOfLight;
