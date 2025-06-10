@@ -5,7 +5,7 @@ using namespace std;
 
 class Parking
 {
-public:
+private:
 	int number_of_place;
 	int parking_fee;
 	int street_number;
@@ -13,6 +13,27 @@ public:
 	bool security_systems;
 	bool availability_of_lighting;
 	bool presence_of_a_roof;
+public:
+	int getNumberOfPlace();
+	void setNumberOfPlace(int number_of_place);
+
+	int getParkingFee();
+	void setParkingFee(int parking_fee);
+
+	int getStreetNumber();
+	void setStreetNumber(int street_number);
+
+	string getStreetName();
+	void setStreetName(string street_name);
+
+	bool isSecuritySystems();
+	void setSecuritySystems(bool security_systems);
+
+	bool isAvailabilityOfLighting();
+	void setAvailabilityOfLighting(bool availability_of_lighting);
+
+	bool isPresenceOfARoof();
+	void setPresenceOfARoof(bool presence_of_a_roof);
 
 	Parking();
 	Parking(int NumberOfPlace);
@@ -26,20 +47,6 @@ public:
 
 	~Parking();
 
-	string toString() {
-		string s = "Number of place " + to_string(number_of_place) + ", ";
-
-		s += "Parking fee " + to_string(parking_fee) + ", ";
-		s += "Street number " + to_string(street_number) + ", ";
-		s += "Street name " + street_name + ", ";
-		s += "Security systems ";
-		s += security_systems ? "yes" : "no";
-		s += ", Availability of lighting ";
-		s += availability_of_lighting ? "yes" : "no";
-		s += ", Presence of a roof ";
-		s += presence_of_a_roof ? "yes\n" : "no\n";
-
-		return s;
-	}
+	string toString();
 };
 
