@@ -19,7 +19,7 @@ int main() {
 	cout << parking7.toString() << endl;
 	cout << parking8.toString() << endl;*/
 
-	Parking* parking = nullptr;
+	/*Parking* parking = nullptr;
 	Initializer initializer;
 
 	int count;
@@ -32,5 +32,33 @@ int main() {
 		cout << parking[i].toString() << endl;;
 
 	}
+	return 0;*/\
+
+	int number_of_place, parking_fee, street_number;
+	string street_name;
+	bool security_systems, availability_of_lighting, presence_of_a_roof;
+
+	Parking parking1;
+
+	cout << "Input number of place: ";
+	cin >> number_of_place;
+	parking1.setNumberOfPlace(number_of_place);
+
+	cout << "Input parking fee: ";
+	cin >> parking_fee;
+	parking1.setParkingFee(parking_fee);
+
+	cout << "Input street number: ";
+	cin >> street_number;
+	parking1.setStreetNumber(street_number);
+
+	cout << "Input street name: ";
+	cin >> street_name;
+	parking1.setStreetName(street_name);
+
+	cout << "\nParking info : " << endl;
+	cout << parking1.toString() << endl;
+
+
 	return 0;
 }
