@@ -1,68 +1,31 @@
-#include "X.h"
-#include "Y.h"
-#include "Z.h"
+#include "Point3D.h"
 
 int main() {
-	int value = 7;
+	Point3D point1(1, 1, 1), point2(2, 2, 2);
 
-	X x;
-	cout << x.toString() << endl;
+	cout << point1.toString() << " > "
+		<< point2.toString() << " --> "
+		<< (point1 > point2 ? "yes" : "no") << endl;
 
-	x.setX(x.getX()  + value);
-	cout << x.toString() << endl;
+	cout << point1.toString() << " <= "
+		<< point2.toString() << " --> "
+		<< (point1 <= point2 ? "yes" : "no") << endl;
 
-	value = 2;
-	x.setX(x.getX() - value);
-	cout << x.toString() << endl;
+	cout << point1.toString() << " < "
+		<< point2.toString() << " --> "
+		<< (point1 < point2 ? "yes" : "no") << endl;
 
-	x.setX(x.getX() * value);
-	cout << x.toString() << endl;
+	cout << point1.toString() << " >= "
+		<< point2.toString() << " --> "
+		<< (point1 >= point2 ? "yes" : "no") << endl;
 
-	x.setX(x.getX() / value);
-	cout << x.toString() << endl;
+	cout << point1.toString() << " == "
+		<< point2.toString() << " --> "
+		<< (point1 == point2 ? "yes" : "no") << endl;
 
-	cout << "\n";
-
-	value = 7;
-
-	Y y;
-	cout << y.toString() << endl;
-
-	y.setY(y.getY() + value);
-	cout << x.toString() << endl;
-
-	value = 2;
-	y.setY(y.getY() - value);
-	cout << x.toString() << endl;
-
-	y.setY(y.getY() * value);
-	cout << y.toString() << endl;
-
-	y.setY(y.getY() / value);
-	cout << y.toString() << endl;
-
-	cout << "\n";
-
-	value = 7;
-
-	Z z;
-	cout << z.toString() << endl;
-
-	z.setZ(z.getZ() + value);
-	cout << z.toString() << endl;
-
-	value = 2;
-	z.setZ(z.getZ() - value);
-	cout << x.toString() << endl;
-
-	z.setZ(z.getZ() * value);
-	cout << z.toString() << endl;
-
-	z.setZ(z.getZ() / value);
-	cout << z.toString() << endl;
-
-
-
+	cout << point1.toString() << " != "
+		<< point2.toString() << " --> "
+		<< (point1 != point2 ? "yes" : "no") << endl;
 
 	return 0;
 }

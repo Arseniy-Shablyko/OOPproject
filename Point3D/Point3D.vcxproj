@@ -128,15 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="X.cpp" />
-    <ClCompile Include="Y.cpp" />
-    <ClCompile Include="Z.cpp" />
+    <ClCompile Include="Point3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libraries.h" />
-    <ClInclude Include="X.h" />
-    <ClInclude Include="Y.h" />
-    <ClInclude Include="Z.h" />
+    <ClInclude Include="Point3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
