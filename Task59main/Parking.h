@@ -47,6 +47,11 @@ public:
 
 	~Parking();
 
+	Parking operator +(int value);
+	Parking operator -(int value);
+	Parking operator *(int value);
+	Parking operator /(int value);
+
 	string toString();
 };
 

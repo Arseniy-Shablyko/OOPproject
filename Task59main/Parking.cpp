@@ -151,6 +151,23 @@ Parking::Parking(const Parking& parking) {
 
 Parking::~Parking() {}
 
+Parking Parking::operator+(int value) {
+	return Parking(number_of_place + value, parking_fee + value);
+}
+
+Parking Parking::operator-(int value) {
+	return Parking(number_of_place - value, parking_fee - value);
+}
+
+Parking Parking::operator*(int value) {
+	return Parking(number_of_place * value, parking_fee * value);
+}
+
+Parking Parking::operator/(int value) {
+	return Parking(number_of_place / value, parking_fee / value);
+}
+
+
 string Parking::toString() {
 	string s = "Number of place " + to_string(number_of_place) + ", ";
 
