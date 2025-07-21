@@ -25,6 +25,6 @@ public:
 	double getPrice();
 	void setPrice(double price);
 
-	string toInfo();
+	string getInfo();
 };
 
